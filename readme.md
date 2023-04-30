@@ -65,4 +65,5 @@ URL bao gồm các thành phần sau:
 
 #### 6. HTTP Headers:
 - HTTP Header là một phần của HTTP và truyền thông tin bổ sung trong các request hoặc phản hồi HTTP. Thông qua server web của trang web được gọi mà dữ liệu được gửi tới trình duyệt, thông qua HTTP Header mà server và trình duyệt trao đổi thông tin meta về tài liệu.
-- 
+
+Request Headers:
