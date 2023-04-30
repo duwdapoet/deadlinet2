@@ -67,3 +67,38 @@ URL bao gồm các thành phần sau:
 - HTTP Header là một phần của HTTP và truyền thông tin bổ sung trong các request hoặc phản hồi HTTP. Thông qua server web của trang web được gọi mà dữ liệu được gửi tới trình duyệt, thông qua HTTP Header mà server và trình duyệt trao đổi thông tin meta về tài liệu.
 
 Request Headers:
+
+Request header giúp client có thể gửi yêu cầu lên server. Mỗi yêu cầu sẽ kèm theo các thông số, và các thông số đó được gọi là Header Parameters.
+
+Trình duyệt và server sẽ dựa vào các thông số header này để trả dữ liệu và hiển thị dữ liệu cho phù hợp, các thông số mà chúng ta thường xuyên gặp:
+- User-Agent: cho phép server xác định ứng dụng, hệ điều hành, nhà cung cấp và phiên bản.
+- Connection: kiểm soát kết nối mạng. Nói cách khác, cho phép dừng hoặc tiếp tục kết nối sau khi server thực hiện xong yêu cầu.
+- Cache-Control: chỉ định chính sách bộ nhớ đệm của trình duyệt.
+- Accept-Language: cho biết tất cả các ngôn ngữ (tự nhiên) mà client có thể hiểu được.
+- Host: xác định tên miền hoặc địa chỉ IP của máy chủ web mà yêu cầu được gửi đến.
+- Authorization: chứa thông tin xác thực người dùng (username và password) để truy cập vào các trang web bảo mật.
+- Cookie: Trường này chứa các cookie được gửi đến từ trình duyệt của người dùng. Cookie được sử dụng để lưu trữ thông tin về người dùng và các thông tin khác như thông tin giỏ hàng, lịch sử truy cập, v.v.
+- Referer: chỉ ra địa chỉ URL của trang web mà yêu cầu được gửi từ đó
+
+Respond Headers:
+
+Response Header là các thông tin được gửi từ máy chủ web đến trình duyệt của người dùng như phản hồi cho một yêu cầu HTTP Request. Header này chứa các thông tin về nội dung trả về, thông tin về máy chủ, thông tin về mã trạng thái và các thông tin khác liên quan đến phản hồi.
+
+Các trường header thông thường bao gồm:
+- Date: Chứa thời gian máy chủ phản hồi yêu cầu.
+- erver: Chứa thông tin về mã và phiên bản của máy chủ web.
+
+- Content-Type: Chứa thông tin về định dạng của nội dung trả về (ví dụ: text/html).
+
+- Content-Length: Chứa thông tin về kích thước của nội dung trả về.
+
+- Cache-Control: Chứa các chỉ thị về bộ nhớ đệm cho các trình duyệt để giảm tải tài nguyên của máy chủ.
+
+- Expires: Chứa thời gian hết hạn của nội dung được lưu trữ trong bộ nhớ đệm của trình duyệt.
+
+- Location: Chứa địa chỉ URL mới nếu phản hồi là một chuyển hướng (redirect).
+
+- Set-Cookie: Chứa các thông tin về cookie được thiết lập cho trình duyệt.
+
+- Content-Encoding: Chứa thông tin về phương thức nén được sử dụng cho nội dung trả về.
+
