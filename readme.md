@@ -102,3 +102,26 @@ Các trường header thông thường bao gồm:
 
 - Content-Encoding: Chứa thông tin về phương thức nén được sử dụng cho nội dung trả về.
 
+#### 7. Cookies:
+Cookies là một tập hợp các tệp thông tin do chính người dùng tạo ra mỗi lần truy cập vào một website nào đó và để lại dữ liệu duyệt web. Thông tin Cookie sẽ thường được lưu dưới dạng cặp tên name – value.
+
+Các đoạn mã Cookie sẽ giúp tối ưu trải nghiệm người dùng nhờ khả năng lưu trữ thông tin và đề xuất nội dung phù hợp cho các lần truy cập tiếp theo. Thông thường, chúng sẽ ghi nhớ trạng thái đăng nhập, tùy chọn trang, các bộ lọc liên quan,… của người dùng.
+
+Cookies được phân làm 2 loại chính đó là Session cookies (phiên cookies) và Persistent cookies (coookies liên tục).
+- Session cookies (phiên cookies): cookies này được giữ lại ở trình duyệt và sẽ bị xóa bỏ khi đóng trình duyệt. Khi cửa sổ trình duyệt mới được mở lại, người dùng sẽ phải cung cấp lại các chứng thực của mình.
+- Persistent cookies (coookies liên tục): cookies này được giữ ở trình duyệt cho tới khi hết hạn hoặc được xóa một cách thủ công. Các trang web sẽ ghi nhớ các chứng thực ngay cả khi người dùng đóng trình duyệt.
+
+Ngoài ra còn có Cookies bên thứ ba, cookies này có chức năng tìm kiếm dữ liệu liên quan tới hoạt động online của bạn để gửi cho chủ sở hữu web đang muốn cải thiện quảng cáo.
+
+Cách thức hoạt động của Cookies:
+- Khi người dùng truy cập vào trang web lần đầu tiên, trang web sẽ tạo ra bản ghi của nó và lưu vào cookies trên trình duyệt của người dùng. Lúc này cookies chỉ là một dòng văn bản ngắn, nó không chứa bất cứ thông tin nào về người dùng hoặc máy của người dùng. Thay vào đó, nó chứa URL của trang web đã đặt cookie.
+- Khi người dùng quay lại và lướt web, mỗi trang mới mà người dùng truy cập, trình duyệt sẽ tìm kiếm cookies. Nếu URL của cookies khớp với URL của trang web, trang web sẽ truy xuất thông tin máy chủ bằng cách sử dụng thông tin lấy được từ cookies.
+- Bằng cách này, trang web có thể nâng cao trải nghiệm người dùng, hạn chế phải lặp đi lặp lại nhiều hoạt động của người dùng. Một số trang web cũng có thể sử dụng cookies để nâng cao trải nghiệm người dùng, người dùng mới có thể thấy phiên bản mới của trang web, trong khi người dùng cũ lại thấy phiên bản trước đó.
+
+Cookies bao gồm:
+- Name: Một tên duy nhất dùng để định danh, tên cookies không phân biệt chữ hoa chữ thường và nó phải được mã hóa URL.
+- Value: giá trị được lưu trữ trong cookies, giá trị này cũng nên được mã hóa URL.
+- Domain: là domain mà cookies chúng ta hợp lệ, mọi thứ được gửi hoặc được sử dụng từ domain này sẽ kèm theo cookies.
+- Path: đường dẫn được chỉ định trong domain, nơi mà cookies sẽ được gửi đến server.
+- Expiration: dấu thời gian, nó cho biết lúc nào cookies sẽ bị xóa. Mặc định thì tất cả cookies sẽ bị xóa khi ta tắt trình duyệt. Tuy nhiên, ta có thể xác định thời gian cố định để xóa, giá trị này được đặt theo định dạng GMT và sau thời gian được quy định, cookies sẽ bị xóa ngay lập tức.
+- Secure Flag: cờ an toàn, với mục đích chỉ gửi cookies nếu kết nối SSL được sử dụng.
