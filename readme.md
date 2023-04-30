@@ -7,6 +7,8 @@
 
 #### 2. HTTP Requests là gì?
 - HTTP request là thông tin được gửi từ client lên server, để yêu cầu server tìm hoặc xử lý một số thông tin, dữ liệu mà client muốn. HTTP request có thể là một file text dưới dạng XML hoặc Json mà cả hai đều có thể hiểu được.
+- Cấu trúc của HTTP request: Request line và Body request ( có thể có hoặc không).
+- Request line là dòng đầu tiên trong HTTP request. Nó bao gồm 3 phần: phương thức HTTP được sử dụng, URI( Uniform Resource Identifier) giúp xác định các tài nguyên mà client yêu cầu, phiên bản của giao thức HTTP.
 
 #### 3. HTTP Responses:
 - HTTP Responses là một thông điệp trả lại từ máy chủ web cho trình duyệt của người dùng sau khi nhận được một yêu cầu từ trình duyệt. Phản hồi này bao gồm một mã trạng thái HTTP và một nội dung phản hồi.
@@ -62,3 +64,5 @@ URL bao gồm các thành phần sau:
 - Fragment (đoạn): Là phần cuối cùng của URL, chỉ định một phần của tài nguyên cụ thể để hiển thị cho người dùng, ví dụ như một vị trí trên trang web hoặc một điểm thời gian trong video.
 
 #### 6. HTTP Headers:
+- HTTP Header là một phần của HTTP và truyền thông tin bổ sung trong các request hoặc phản hồi HTTP. Thông qua server web của trang web được gọi mà dữ liệu được gửi tới trình duyệt, thông qua HTTP Header mà server và trình duyệt trao đổi thông tin meta về tài liệu.
+- 
